@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-const API = process.env.API_LINK;
-
+const API = process.env.REACT_APP_API_LINK;
 export default function App() {
 const [people, setPeople] = useState([]);
 const [form, setForm] = useState({ name: "", age: "" });
